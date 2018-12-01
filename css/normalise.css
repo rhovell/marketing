@@ -1,0 +1,56 @@
+/*
+main styling
+*/
+html,
+body {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+}
+body {
+  width: 1000px;
+  font-family: /*'Roboto Slab', serif;*/
+
+}
+main {
+  text-align: center;
+  margin: auto;
+  max-width: 100%;
+}
+/*
+link styling in main page
+*/
+a:link {
+  color: /*#008080*/;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: /*#2F4F4F*/;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: /*green*/;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:active {
+  transform: translateY(4px);
+
+}
+/*
+header styling
+*/
+header {
+  max-width: 100%;
+}
+/*
+footer styling
+*/
+footer {
+  width: 1000px;
+  max-width: 100%;
+  margin-top: 1em;
+  margin-bottom: 0;
+}
