@@ -56,7 +56,6 @@ function hideSection(event){
   let selector = target + 'Section';
   // finds matching section-content
   let selected = document.getElementById(selector);
-  console.log(parent)
   // displays content
   selected.style.display = 'none';
   // finds parent holding the event listener
