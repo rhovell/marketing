@@ -14,29 +14,145 @@
 <!-- responsive style sheets -->
 <!-- <link rel="stylesheet" type="text/css" href="css/responsive.css"> -->
 <!-- google fonts -->
-<!-- <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet"> -->
+
+<link href="https://fonts.googleapis.com/css?family=Baloo|Carter+One|Chewy|Corben|Overlock|Pompiere|Ranga|Special+Elite" rel="stylesheet">
 
 <!-- page title -->
-<title></title>
+<title>Rachel's Eco Design</title>
 <!-- end of head -->
 </head>
+
 <!-- start of body -->
 <body>
+
 <!-- page header -->
 <header>
+  <div class="header-table">
+    <img class="logo" src="img/branding/RED-logo.svg" alt="RED" title="RED">
 
-  <h1></h1>
+    <div class="menu">
+      <!-- on mobile display burger menu -->
+        <div class="menu-button">
+          <img src="img/menu.png" title="menu" alt="menu">
+        </div>
+      </div>
+    </div>
+        <!-- on desktop display list view -->
+  <nav class="menu-main">
+    <ul class="mobile-menu">
+      <li>Home</li>
+      <li>About</li>
+      <li>Web Design</li>
+      <li>Graphic Design</li>
+      <li>Contact</li>
+    </ul>
+  </nav>
   <!-- end of header -->
 </header>
+
 <!-- start of main area -->
 <main>
+  <div class="home-page-container">
+    <div class="home-page-opener">
+      <div class="tagline">Responsible and eco-friendly web design that aims to spread eco-awareness.</div>
+      <div class="space"></div>
 
-  <!-- end of main area -->
+      <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <img src="img/websites/save-the-bugs.PNG" style="width:100%">
+        <div class="text">Save The Bugs game</div>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="img/websites/memory-game.PNG" style="width:100%">
+        <div class="text">Memory Card game</div>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="img/websites/times.jpg" style="width:100%">
+        <div class="text">The Times Responsive Website</div>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      </div>
+      <div class="space-small"></div>
+
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+
+      </div>
+
+<!-- ABOUT RED SECTION -->
+    <div class="home-page-about textContent">
+      <div class="section-selector" onclick=showSection(event)>
+          <div class="section-title" id="about">
+            About RED
+            <div class="arrow">&darr;</div>
+          </div>
+          <div class="rule">
+            <hr>
+          </div>
+        </div>
+        <div id="aboutSection" class="section-content">
+          <p>Responsible web design that aims to help spread awareness and money for environmental issues and charities alike.</p>
+          <p>I am passionate about nature, the environment and everything about it. I believe that it is not only our responsibilty to try and correct the damage that we have already done, but also to educate future generations on the dangers of our current lifestyles, and how they can change their futures to help the world.
+          Instead of using pushy techniques to scare and guilt people into "caring" for the environment, I prefer to nuture peoples love and passion for nature, and educate people on how they can help in simple, or drastic ways.</p>
+          <p>I design websites, games and apps that follow a theme that is educational, fun, enticing and above all spreads environmental awareness.</p>
+          <p>I also aim to make every project paper free and as environmentally friendly as possible. Where I can, I try to guide my partners about environmental issues and how they can help to support them.</p>
+          <p>I am currently unavailable to work on full-time projects, but if you are interested in my availablilty, please contact me. </p>
+        </div>
+    </div>
+<!-- ABOUT ME SECTION -->
+    <div class="home-page-about-me textContent">
+      <div class="section-selector" onclick=showSection(event)>
+          <div class="section-title" id="aboutMe">
+            About Me
+            <div class="arrow">&darr;</div>
+          </div>
+          <div class="rule">
+            <hr>
+          </div>
+        </div>
+    <div id="aboutMeSection" class="section-content">
+      <p>I am currently working at Stockport Grammar School as their Interim Web & Digital Officer, managing their Wordpress website; creating new tools and features with PHP, JavaScript and CSS (both front-end and back-end), correcting inhertant issues from outdated code and general website management.</p>
+      <p>During term time I also photograph school events and daily life, and write news stories for the website.
+      If you would like to know when I am next available for contract work, please contact me.</p>
+      <p>Curently situated in Stockport, north west England, I spend my spare time coding and enjoying the outdoors whenever possible. I like to participate in nature counts such as The Big Garden Bird Count, The Great British Bee Count and The Big Butterfly Count, and share my results with nature communities online.</p>
+    </div>
+  </div>
+<!-- CONTACT SECTION -->
+  <div class="home-page-contact textContent">
+    <div class="section-selector" onclick=showSection(event)>
+        <div class="section-title" id="contact">
+          Contact
+          <div class="arrow">&darr;</div>
+        </div>
+        <div class="rule">
+          <hr>
+        </div>
+      </div>
+      <div id="contactSection" class="section-content">
+        <p>Contact Me<p>
+      </div>
+    </div>
+
+    <!-- End of main section container -->
+    </div>
+
+<!-- end of main area -->
 </main>
 
 <!-- footer -->
 <footer>
-
+  <div class="footer-text textContent">
+Made By Rachel's Eco Design (RED)
+</div>
 <!-- end of footer -->
 </footer>
 <!-- javaScript files  -->
