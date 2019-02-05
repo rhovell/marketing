@@ -1,0 +1,67 @@
+<?php include 'validation.php';?>
+<!DOCTYPE html>
+<html lang="en" class="home">
+<!-- describes html doctument style  -->
+<head>
+<!-- meta data -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="">
+<link rel="stylesheet" type="text/css" href="css/normalise.css">
+
+<!-- page title -->
+<title>Contact</title>
+<!-- end of head -->
+</head>
+
+<!-- start of body -->
+<body>
+<!-- CONTACT SECTION -->
+  <div class="home-page-contact textContent">
+    <p>If you would like more information about RED or would like to know when I am next available for work, please send your full name, contact details and query to <a href="mailto:r.hovell@live.com" title="Contact RED">r.hovell@live.com</a> or <a href="tel:+447833258128">07833258128</a>.<p>
+      <br>
+    <div class="section-selector" onclick=showSection(event)>
+        <div class="section-title" id="contact">
+          Contact
+          <div class="arrow">&darr;</div>
+        </div>
+        <div class="rule">
+          <hr>
+        </div>
+      </div>
+    <!--  <div id="contactSection" class="section-content">
+        <div class="form-container">
+          <form class="contact" action="/validation.php" method="POST">
+            <div class="form-object">
+              <label for="name">Name:</label>
+              <input id="name" type="text" placeholder="Full Name" required>
+            </div>
+            <div class="form-object">
+              <label for="email" class="email">Email:</label>
+              <input id="email" type="text" placeholder="Email address" required>
+            </div>
+            <div class="form-object">
+              <label for="phone">Phone:</label>
+              <input id="phone" type="text" placeholder="Contact Number">
+            </div>
+            <div class="form-object query">
+              <label for="query" class="query">Query:</label>
+              <textarea id="query" class="query" type="textarea" placeholder="Query" required rows="6"></textarea>
+            </div>
+            <div class="form-object">
+              <span class="error"><?php echo $messageError;?></span>
+              <input class="submit" type="submit" name="submit" value="Submit">
+              <span class="success"><?php echo $successMessage;?></span>
+            </div>
+          </form>
+      </div>
+    </div>-->
+
+<!-- javaScript files  -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/jscript" src="java/java.js"></script>
+</body>
+</html>
