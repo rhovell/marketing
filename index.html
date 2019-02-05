@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="main">
 <!-- describes html doctument style  -->
 <head>
 <!-- meta data -->
@@ -15,8 +15,7 @@
 <!-- <link rel="stylesheet" type="text/css" href="css/responsive.css"> -->
 <!-- google fonts -->
 
-<link href="https://fonts.googleapis.com/css?family=Baloo|Carter+One|Chewy|Corben|Overlock|Pompiere|Ranga|Special+Elite" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 <!-- page title -->
 <title>Rachel's Eco Design</title>
 <!-- end of head -->
@@ -28,131 +27,136 @@
 <!-- page header -->
 <header>
   <div class="header-table">
-    <img class="logo" src="img/branding/RED-logo.svg" alt="RED" title="RED">
+    <img class="red-logo" src="img/branding/RED-logo.svg" alt="RED" title="RED">
 
-    <div class="menu">
-      <!-- on mobile display burger menu -->
-        <div class="menu-button">
-          <img src="img/menu.png" title="menu" alt="menu">
-        </div>
+    <!-- <div class="menu"> -->
+    <!-- on mobile display burger menu -->
+      <div class="menu-button" id="burgerMenu" onclick="showMenu()">
+        <img src="img/menu.png" title="menu" alt="menu" >
       </div>
+      <!-- on desktop display list view -->
+      <!-- <div class="menu-container"> -->
+      <nav class="menu-main" id="navi">
+        <ul class="nav-list">
+          <li><a href="/home.html" title="Home" alt="Home" target="iframe_a">Home</a></li>
+          <li><a href="/web.html" title="Web Design" alt="Web Design" target="iframe_a">Web Design</a></li>
+          <li><a href="/graphic.html" title="Graphic Design" alt="Graphic Design" target="iframe_a">Graphic Design</a></li>
+          <li><a href="/contact.html" title="Contact" alt="Contact" target="iframe_a">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- </div> -->
     </div>
-        <!-- on desktop display list view -->
-  <nav class="menu-main">
-    <ul class="mobile-menu">
-      <li>Home</li>
-      <li>About</li>
-      <li>Web Design</li>
-      <li>Graphic Design</li>
-      <li>Contact</li>
-    </ul>
-  </nav>
+    <!-- </div> -->
   <!-- end of header -->
 </header>
 
 <!-- start of main area -->
 <main>
-  <div class="home-page-container">
-    <div class="home-page-opener">
-      <div class="tagline">Responsible and eco-friendly web design that aims to spread eco-awareness.</div>
-      <div class="space"></div>
+  <div id="iframeContainer" seamless="seamless" scrolling="no" style="width:100%; height: 100%;">
 
-      <div class="slideshow-container">
-
-      <div class="mySlides fade">
-        <img src="img/websites/save-the-bugs.PNG" style="width:100%">
-        <div class="text">Save The Bugs game</div>
-      </div>
-
-      <div class="mySlides fade">
-        <img src="img/websites/memory-game.PNG" style="width:100%">
-        <div class="text">Memory Card game</div>
-      </div>
-
-      <div class="mySlides fade">
-        <img src="img/websites/times.jpg" style="width:100%">
-        <div class="text">The Times Responsive Website</div>
-      </div>
-
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-      </div>
-      <div class="space-small"></div>
-
-      <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-      </div>
-
-      </div>
-
-<!-- ABOUT RED SECTION -->
-    <div class="home-page-about textContent">
-      <div class="section-selector" onclick=showSection(event)>
-          <div class="section-title" id="about">
-            About RED
-            <div class="arrow">&darr;</div>
-          </div>
-          <div class="rule">
-            <hr>
-          </div>
-        </div>
-        <div id="aboutSection" class="section-content">
-          <p>Responsible web design that aims to help spread awareness and money for environmental issues and charities alike.</p>
-          <p>I am passionate about nature, the environment and everything about it. I believe that it is not only our responsibilty to try and correct the damage that we have already done, but also to educate future generations on the dangers of our current lifestyles, and how they can change their futures to help the world.
-          Instead of using pushy techniques to scare and guilt people into "caring" for the environment, I prefer to nuture peoples love and passion for nature, and educate people on how they can help in simple, or drastic ways.</p>
-          <p>I design websites, games and apps that follow a theme that is educational, fun, enticing and above all spreads environmental awareness.</p>
-          <p>I also aim to make every project paper free and as environmentally friendly as possible. Where I can, I try to guide my partners about environmental issues and how they can help to support them.</p>
-          <p>I am currently unavailable to work on full-time projects, but if you are interested in my availablilty, please contact me. </p>
-        </div>
-    </div>
-<!-- ABOUT ME SECTION -->
-    <div class="home-page-about-me textContent">
-      <div class="section-selector" onclick=showSection(event)>
-          <div class="section-title" id="aboutMe">
-            About Me
-            <div class="arrow">&darr;</div>
-          </div>
-          <div class="rule">
-            <hr>
-          </div>
-        </div>
-    <div id="aboutMeSection" class="section-content">
-      <p>I am currently working at Stockport Grammar School as their Interim Web & Digital Officer, managing their Wordpress website; creating new tools and features with PHP, JavaScript and CSS (both front-end and back-end), correcting inhertant issues from outdated code and general website management.</p>
-      <p>During term time I also photograph school events and daily life, and write news stories for the website.
-      If you would like to know when I am next available for contract work, please contact me.</p>
-      <p>Curently situated in Stockport, north west England, I spend my spare time coding and enjoying the outdoors whenever possible. I like to participate in nature counts such as The Big Garden Bird Count, The Great British Bee Count and The Big Butterfly Count, and share my results with nature communities online.</p>
-    </div>
-  </div>
-<!-- CONTACT SECTION -->
-  <div class="home-page-contact textContent">
-    <div class="section-selector" onclick=showSection(event)>
-        <div class="section-title" id="contact">
-          Contact
-          <div class="arrow">&darr;</div>
-        </div>
-        <div class="rule">
-          <hr>
-        </div>
-      </div>
-      <div id="contactSection" class="section-content">
-        <p>Contact Me<p>
-      </div>
-    </div>
-
-    <!-- End of main section container -->
-    </div>
+  <iframe src="home.html" height="700" width="100%" style="border:none; overflow:hidden;font-family: 'Roboto', sans-serif;" name="iframe_a"></iframe>
+</div>
 
 <!-- end of main area -->
 </main>
 
 <!-- footer -->
 <footer>
-  <div class="footer-text textContent">
-Made By Rachel's Eco Design (RED)
-</div>
+  <hr>
+    <div class = "foot">
+       <p class = "foottext">
+         Website designed and built by
+         <a href="#about" title = "Rachel's Eco Design">
+           Rachel's Eco Design</a>
+         <br>Web design that raises awareness of environmental issues and charities.
+       </p>
+      <div class = "column col-1">
+        <div class = "nav-bar">
+         <h4>Site Navigation</h4>
+         <div class = "footer-site-links">
+           <ul>
+            <li><a href="home.html" target="iframe_a" class="foot-link" title="About Rachel's Web Design">Home</a></li>
+            <li><a href="web.html" target="iframe_a" class="foot-link" title="Web Design Portfolio">Web Design</a></li>
+            <li><a href="graphic.html" target="iframe_a" class="foot-link" title="Graphic Design Portfolio">Graphic Design</a></li>
+            <li><a href="contact.html" target="iframe_a" class="foot-link" title="Contact">Contact</a></li>
+           </ul>
+         </div>
+        </div>
+      </div>
+       <!--
+       professional links
+     -->
+    <div class = "column col-2">
+      <div class = "pro-bar">
+        <h4 class = "pro-links">Rachel's Eco Design</h4>
+        <div class = "linked in logo">
+          <a href = "https://www.linkedin.com/in/rachel-hovell/" target="_blank" rel="noopener" title="Rachel Hovell on Linked In">
+          <img src = "img/social/linkedin.png" alt = "LinkedIn">
+          </a>
+        </div>
+        <div class = "codepen logo">
+          <a href = "https://codepen.io/Rhovell/#" target="_blank" rel="noopener" title="Rachel Hovell on Codepen">
+          <img src = "img/social/codepen.png" alt = "Codepen">
+          </a>
+        </div>
+        <div class = "github logo">
+          <a href = "https://github.com/rhovell" target="_blank" rel="noopener" title="Rachel Hovell on GitHub">
+          <img src = "img/social/github.png" alt = "Git Hub">
+          </a>
+        </div>
+        <div class = "facebook logo">
+          <a href = "https://www.facebook.com/rachelswebdesign/" target="_blank" rel="noopener" title="Rachel's Web Design on Facebook">
+          <img src = "img/social/facebook.png" alt = "Rachel's Web Design on Facebook">
+          </a>
+        </div>
+      </div>
+    </div>
+      <!--
+      social links
+      -->
+      <div class = "column col-3">
+        <div class = "soc-bar">
+          <h4 class = "soc-links">Rainbow Rach Designs</h4>
+        <div class = "fb logo">
+          <a href = "https://www.facebook.com/RainbowRachDesigns" target="_blank" rel="noopener" title="Rainbow Rach on Facebook">
+          <img src = "img/social/facebook.png" alt = "Rainbow Rach Design's on Facebook">
+          </a>
+        </div>
+        <div class = "twitter logo">
+          <a href = "https://twitter.com/RainbowRach_" target="_blank" rel="noopener" title="Rainbow Rach on Twitter">
+          <img src = "img/social/twitter.png" alt = "Rainbow Rach Designs on Twitter">
+        </a>
+        </div>
+        <div class = "zazzle logo">
+          <a href = "https://www.zazzle.co.uk/rainbow_rach_designs/" target="_blank" rel="noopener" title="Zazzle Shop">
+            <img src = "img/social/zazzle-z.png" alt = "Zazzle Shop">
+          </a>
+        </div>
+        <div class = "wordpress logo">
+          <a href = "https://rachelhovelldesigns.wordpress.com/" target="_blank" rel="noopener" title="Wordpress Blog">
+            <img src = "img/social/wordpress.png" alt = "Wordpress Blog">
+          </a>
+        </div>
+        <div class = "instagram logo">
+          <a href = "https://www.instagram.com/rainbowrach/" target="_blank" rel="noopener" title="Rainbow Rach on instagram">
+            <img src = "img/social/instagram.png" alt = "Rainbow Rach on instagram">
+          </a>
+        </div>
+        <div class="society6 logo">
+          <a href="https://society6.com/rachelhovell" target="_blank" rel="noopener" alt="Society6" title="Society6">
+          <img src="img/social/society6.png" class="logo s" alt="Rainbow Rach Designs on Society6" title="Rainbow Rach Designs"></a>
+        </div>
+      </div>
+    </div>
+    <div class = "copyright-area">
+        Websites, games, photography, graphic design pieces and brand logos are all subject to copyright
+        Rachel's Eco Design or Rainbow Rach Designs 2018. Social logos from various web sources.
+    </div>
+  </div>
+    <!--************************************************************************************-->
+    <!--
+    end of footer
+  -->
 <!-- end of footer -->
 </footer>
 <!-- javaScript files  -->
