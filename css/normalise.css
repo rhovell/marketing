@@ -335,9 +335,6 @@ input.submit-button {
     .header-table {
       grid-template-columns: 40% 60%;
     }
-    body {
-      font-size: 18px;
-    }
     #navi {
       display: block;
       position: absolute;
