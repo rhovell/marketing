@@ -12,7 +12,7 @@
     max-width: calc(90% - 2em);
   }
   img.lang-logo {
-    width: 2em;
+    width: 2em !important;
   }
 }
 
