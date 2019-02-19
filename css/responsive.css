@@ -11,6 +11,9 @@
   .slideshow-container, .graphic-slideshow-container {
     max-width: calc(90% - 2em);
   }
+  img.lang-logo {
+    width: 2em;
+  }
 }
 
 @media screen and (min-width:750px){
