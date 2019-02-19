@@ -222,6 +222,8 @@ img {vertical-align: middle;}
 .section-content {
   display: none;
   text-indent: inherit;
+  max-width: calc(100% - 2em);
+  margin: auto;
 }
 hr {
   height:1px;
