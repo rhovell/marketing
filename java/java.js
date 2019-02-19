@@ -34,6 +34,7 @@ function showSection(event){
   let selected = document.getElementById(selector);
   // displays content
   selected.style.display = 'block';
+      selected.style.width = 'calc(100% - 2em)';
   // finds parent holding the event listener
   let parent = event.target.parentElement
   // removes current removeEventListener
