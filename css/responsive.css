@@ -5,11 +5,11 @@
   min-width: 30%;
 }
   .lang-grid {
-    max-width: 90%;
+    max-width: calc(90% - 2em);
   }
   
   .slideshow-container, .graphic-slideshow-container {
-    max-width: 90%;
+    max-width: calc(90% - 2em);
   }
 }
 
