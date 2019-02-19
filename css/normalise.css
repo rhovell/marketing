@@ -12,7 +12,7 @@ html.main {
 }
 body {
   padding: 0;
-  max-width: 100%;
+  max-width: calc(100% - 2em);
   background-color: #FFFFFF;
   margin: 1em;
   font-size: 16px;
