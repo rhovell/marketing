@@ -229,6 +229,7 @@ p.spaced-text {
   text-align: center;
   vertical-align: middle;
   margin: 0;
+  min-width:75px;
 }
 .arrow {
   margin-left: 10px;
