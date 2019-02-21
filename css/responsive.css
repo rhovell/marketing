@@ -7,12 +7,16 @@
   .lang-grid {
     max-width: calc(90% - 2em);
   }
-  
+
   .slideshow-container, .graphic-slideshow-container {
     max-width: calc(90% - 2em);
   }
   img.lang-logo {
     width: 2em !important;
+  }
+  #navi.open {
+    right: 0;
+    top: 90%;
   }
 }
 
