@@ -20,7 +20,7 @@
   margin: 0;
 }
 .large-space {
-  height: 60px;
+  height: 140px;
 }
 table .lang-table {
   display: table;
@@ -34,6 +34,7 @@ ul.port-links  {
 .port-links li {
   padding: 5px;
   padding-bottom: 10px;
+  width: fit-content;
 }
 .web-grid {
   display: grid;
@@ -51,7 +52,7 @@ ul.port-links  {
 }
 .item-box img {
   border: 1px solid #ccc;
-  width: 100%;
+  width: 480px;
   max-width: 90vw;
 }
 .lang-container {
