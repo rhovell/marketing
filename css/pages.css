@@ -34,12 +34,16 @@ ul.port-links  {
 .port-links li {
   padding: 5px;
   padding-bottom: 10px;
-  width: fit-content;
+  text-align: center;
 }
 .web-grid {
   display: grid;
   grid-template-columns: 100%;
 
+}
+.port-links-section {
+  margin-top:20px;
+  text-align:center;
 }
 .item-container {
   width: 100%;
