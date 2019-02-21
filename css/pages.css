@@ -21,6 +21,9 @@
 }
 .large-space {
   height: 60px;
+}
+table .lang-table {
+  display: table;
 
 }
 ul.port-links  {
