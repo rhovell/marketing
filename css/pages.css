@@ -4,13 +4,27 @@
 .lang-grid {
   display: grid;
   grid-template-columns: 20% 20% 20% 20% 20% ;
-  width: 50%;
+  /* width: 50%; */
   float: right;
   min-width: 270px;
 }
 .lang-grid img {
   vertical-align: middle;
   margin: auto !important;
+}
+#web td {
+  padding:2px;
+  max-width:88px;
+  text-align: center;
+  vertical-align: middle;
+  margin: 0;
+}
+.large-space {
+  height: 140px;
+}
+table .lang-table {
+  display: table;
+
 }
 ul.port-links  {
   list-style: none;
@@ -19,11 +33,17 @@ ul.port-links  {
 }
 .port-links li {
   padding: 5px;
+  padding-bottom: 10px;
+  text-align: center;
 }
 .web-grid {
   display: grid;
   grid-template-columns: 100%;
 
+}
+.port-links-section {
+  margin-top:20px;
+  text-align:center;
 }
 .item-container {
   width: 100%;
@@ -35,8 +55,8 @@ ul.port-links  {
 }
 .item-box img {
   border: 1px solid #ccc;
-  width: 100%;
-  max-width: 100vw;
+  width: 480px;
+  max-width: 90vw;
 }
 .lang-container {
   min-height: 58px;

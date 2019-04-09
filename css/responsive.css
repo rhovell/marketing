@@ -1,11 +1,138 @@
 /* responsive styles  */
-@media screen and (min-width:425px){
+@media screen and (max-width:655px){
+.red-logo {
+  max-width: 50%;
+  min-width: 30%;
+}
+  .lang-grid {
+    max-width: calc(90% - 2em);
+  }
 
+  .slideshow-container, .graphic-slideshow-container {
+    max-width: calc(90% - 2em);
+  }
+  img.lang-logo {
+    width: 3em !important;
+  }
+  #navi.open {
+    right: 0;
+    top: 90%;
+  }
 }
 
-@media screen and (min-width:750px){
+/* MOBILE STYLING  */
+@media screen and (max-width:800px){
+  #navi {
+    display: none;
+  }
 
+  #navi.open {
+    display: block;
+    position: absolute;
+    right: 0;
+    width: 40%;
+    height: auto;
+    top: 50%;
+    text-align: right;
+    /* box-shadow: none|h-offset v-offset blur spread color */
+    box-shadow: -5px 5px 5px #ccc;
+  }
+  #navi li {
+    width: auto;
+    padding: 5px 10px 10px 5px;
+  }
 }
-@media screen and (min-width:1024px){
+/* DESKTOP STYLING */
+  @media screen and (min-width:800px){
+    .header-table {
+      grid-template-columns: 40% 60%;
+    }
+    #navi {
+      display: block;
+      position: absolute;
+      right: 1em;
+      width: 60%;
+      height: auto;
+      top: 40%;
+      text-align: right;
+      /* box-shadow: none|h-offset v-offset blur spread color */
+      box-shadow: none;
+      font-size: 18px;
+    }
+    .menu-button {
+      display: none;
+    }
+    .nav-list {
+      display: -webkit-inline-box;
+    }
+    #navi li {
+      width: auto;
+      padding-left: 10px;
+      padding-right: 5px;
 
+    }
+}
+
+@media screen and (min-width: 800px){
+  /*
+  footer social logos grid positioning
+  */
+  .pro-bar, .soc-bar {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+  }
+  .pro-bar h4, .soc-bar h4 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+  }
+  .nav-bar h4 {
+    margin-bottom: 10px;
+  }
+  .linked.in.logo {
+    grid-column-start: 2;
+    grid-row-start: 2;
+  }
+  .facebook.logo {
+    grid-column-start: 1;
+    grid-row-start: 2;
+  }
+  .codepen.logo {
+    grid-column-start: 3;
+    grid-row-start: 2;
+  }
+  .github.logo {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+  }
+  .fb.logo {
+    margin-top: auto;
+    grid-column-start: 1;
+    grid-row-start: 2;
+  }
+  .twitter.logo {
+    grid-column-start: 2;
+    margin-top: auto;
+    grid-row-start: 2;
+  }
+  .zazzle.logo {
+    grid-column-start: 3;
+    grid-row-start: 2;
+  }
+  .wordpress.logo {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+  }
+  .instagram.logo {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+  }
+  .society6.logo {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+  }
 }

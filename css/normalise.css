@@ -1,11 +1,3 @@
-
-
-
-
-
-
-
-
 /*
 main styling
 */
@@ -24,9 +16,10 @@ body {
   background-color: #FFFFFF;
   margin: 1em;
   font-size: 16px;
-  font-family: 'Roboto', sans-serif;
-  /* height: 100%; */
-  /* max-height: 100%; */
+  font-family: 'Montserrat', sans-serif;
+}
+body.page-body {
+  max-width: calc(100% - 20px);
 }
 header {
   position: sticky;
@@ -83,7 +76,7 @@ header {
   max-width: 100%;
 }
 .red-logo {
-  max-width: 300px;
+  max-width: 500px;
   min-width: 300px;
 }
 
@@ -137,8 +130,8 @@ img {
 /* Slideshow container */
 .slideshow-container,
 .graphic-slideshow-container {
-  max-width: 450px;
-  position: relative;
+  max-width: 650px;
+  position: static;
   margin: auto;
   /* border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc; */
@@ -177,9 +170,10 @@ img {
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
-  bottom: -30px;
+  /* bottom: -30px; */
   width: 100%;
   text-align: center;
+  left: 0;
 }
 
 .space-small {
@@ -224,15 +218,26 @@ img {
 .section-selector {
   box-sizing: content-box;
   cursor: pointer;
+  width: fit-content;
 }
 .section-title {
   display: -webkit-inline-box;
+}
+p.spaced-text {
+  margin: inherit;
+  text-align: center;
+  /* padding: auto; */
 }
 .languages {
   font-style: italic;
 }
 #aboutMeSection td {
-  padding-top:5px;
+  padding:5px;
+  max-width:88px;
+  text-align: center;
+  vertical-align: middle;
+  margin: 0;
+  min-width:75px;
 }
 .arrow {
   margin-left: 10px;
@@ -240,15 +245,20 @@ img {
 .section-content {
   display: none;
   text-indent: inherit;
+  /* max-width: 100%; */
+  margin: auto;
+  hyphens: auto;
 }
 hr {
   height:1px;
   border:none;
   color:#ccc;
-  background-color:#ccc;
+  /* background-color:#ccc; */
   width:100%;
   text-align:center;
   margin: 5px auto;
+  border: 0;
+   background-image: linear-gradient(to right, #ccc, #333, #ccc);
 }
 .contact {
   padding: 5px;
@@ -487,10 +497,6 @@ social logos
   width: 2em;
 }
 .society6.logo {
-  margin: 0;
-}
-.society6.logo img {
-  width: 3.5em;
   margin: 0;
 }
 /*
