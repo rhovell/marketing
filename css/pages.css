@@ -55,7 +55,7 @@ ul.port-links  {
 }
 .item-box img {
   border: 1px solid #ccc;
-  width: 480px;
+  width: 100%;
   max-width: 90vw;
 }
 .lang-container {
