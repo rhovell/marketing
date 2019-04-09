@@ -86,6 +86,7 @@ header {
   max-width: 300px;
   min-width: 300px;
 }
+
 /* homepage opening section styling */
 .tagline {
   text-align: center;
@@ -122,9 +123,16 @@ header {
 }
 
 /* Fading animation */
-* {box-sizing: border-box}
-.mySlides {display: none}
-img {vertical-align: middle;}
+* {
+  box-sizing: border-box;
+}
+
+.mySlides {
+  display: none;
+}
+img {
+  vertical-align: middle;
+}
 
 /* Slideshow container */
 .slideshow-container,
@@ -132,8 +140,8 @@ img {vertical-align: middle;}
   max-width: 450px;
   position: relative;
   margin: auto;
-  border-top: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
+  /* border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc; */
 }
 
 /* Next & previous buttons */
@@ -314,7 +322,7 @@ input.submit-button {
     right: 0;
     width: 40%;
     height: auto;
-    top: 50%;
+    top: 20%;
     text-align: right;
     /* box-shadow: none|h-offset v-offset blur spread color */
     box-shadow: -5px 5px 5px #ccc;
@@ -441,7 +449,7 @@ footer {
 }
 .pro-bar, .soc-bar {
   display: grid;
-  grid-template-columns: 40% 60%;
+  grid-template-columns: 50% 50%;
   flex-wrap: wrap;
 }
 .pro-bar h4, .soc-bar h4, .nav-bar h4 {
@@ -482,7 +490,7 @@ social logos
   margin: 0;
 }
 .society6.logo img {
-  width: 6em;
+  width: 3.5em;
   margin: 0;
 }
 /*
@@ -534,6 +542,7 @@ grid positioning
     display: grid;
     grid-template-columns: 33% 33% 33%;
   }
+
   .pro-bar h4, .soc-bar h4 {
     grid-column-start: 1;
     grid-column-end: 4;
@@ -574,7 +583,7 @@ grid positioning
     grid-row-start: 2;
   }
   .wordpress.logo {
-    grid-column-start: 1;
+    grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 3;
   }
@@ -587,6 +596,9 @@ grid positioning
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 3;
+  }
+  .society6.logo img {
+    width: 6em;
   }
 }
 }

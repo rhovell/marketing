@@ -28,7 +28,6 @@ ul.port-links  {
 .item-container {
   width: 100%;
   max-width: 100vw;
-  /* border-bottom: 1px solid #ccc; */
 }
 .item-box {
   display: grid;
@@ -93,6 +92,9 @@ styling to create hover style
 @media screen and (min-width: 600px){
   .web-grid {
     grid-template-columns: 50% 50%;
+  }
+  .item-container {
+    padding: 10px;
   }
 }
 @media screen and (min-width: 900px){
